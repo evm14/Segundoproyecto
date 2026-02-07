@@ -13,5 +13,7 @@
         <x-button type='danger' id='danger'>Botón de Danger</x-button>
         <x-button type='warning' id='warning'>Botón de Warning</x-button>
     </div>
-    @if(!empty)
+     @if(!@empty($nombre))
+     <h4> el nombre ingresado es: {{$nombre}}</h4>
+     @endif
 </x-app-layout>
